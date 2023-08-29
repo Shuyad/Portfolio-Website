@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+    <body>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/shubham logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <img id="icon1" src="images/cancel.png" onClick="closemenu()">    
+                </ul>
+                <img src="images/hamburger.png" id="icon2" onClick="openmenu()">
+                
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Shubham Yadav </span><br>from Jabalpur.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about-------------- -->
+
+    <div id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/shuyad02.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora dolorum consequatur, laboriosam suscipit est at, illum illo quasi maiores maxime. Recusandae similique aut vitae a autem. Placeat, quasi molestias.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2016</span><br>10th</li>
+                            <li><span>2017-2018</span><br>12th</li>
+                            <li><span>2018-2022</span><br>B.Tech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Playing</span><br>Football,Cricket</li>
+                            <li><span>Reading</span><br>Novels,Horror Stories</li>
+                            <li><span>Music</span><br>Flute</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container-portfolio">
+            <h1 class="sub-title-work">My Work</h1>
+            <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect you to the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect you to the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect you to the world.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------contact------------------- -->
+
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shubhamyadav012233@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7389094793</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shubhamyadav012233"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                    <div id="response">Message Sent !!!</div>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shubham. Made with <i class="fa-solid fa-heart"></i> by Shubham Yadav</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById('sidemenu')
+
+        function openmenu(){
+            sidemenu.style.left="250px";
+            
+        }
+
+        function closemenu(){
+            sidemenu.style.left="430px";
+            
+        }
+    </script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    import { getFirestore, addDoc, collection} from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBD7-T6nrTVKzvU35iax5I0_O4V4H2ElNM",
+      authDomain: "portfolio-website-c0177.firebaseapp.com",
+      projectId: "portfolio-website-c0177",
+      storageBucket: "portfolio-website-c0177.appspot.com",
+      messagingSenderId: "183021170112",
+      appId: "1:183021170112:web:cc38f5c2602626f45a2c25"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    var name,email,message;
+    const msg=document.getElementById('response')
+    
+    document.getElementById("contact-form").addEventListener("submit",submitForm)
+
+    function submitForm(e){
+    e.preventDefault();
+    name=getElementVal('name')
+    email=getElementVal('email')
+    message=getElementVal('message')
+    //console.log(name,email,message)
+    addDoc(collection(db,"contactForm"),{
+        name:name,
+        email:email,
+        message:message
+    }).then(()=>{
+        msg.style.display="block"
+        setTimeout(()=>{
+            msg.style.display="none"
+        },2000)
+        document.getElementById('name').value=""
+        document.getElementById('email').value=""
+        document.getElementById('message').value=""
+
+        
+        
+    }).catch((err)=>{
+        alert(err.message)
+    })
+  }
+
+  const getElementVal=(id)=>{
+    return document.getElementById(id).value
+  }
+
+    
+
+
+
+    
+  </script>
+
+
+    </body>
+</html>
