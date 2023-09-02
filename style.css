@@ -590,7 +590,7 @@ form .btn2{
         font-size: 20px;
 
     }
-    .container1{
+    .container{
         padding: auto;
     }
     .contact-left p i{
@@ -647,6 +647,7 @@ form .btn2{
         background: #262626;
         font-weight: 300;
         margin-top: 20px;
+        margin-left: 18px;
     }
     .copyright i{
         color: #ff004f;
