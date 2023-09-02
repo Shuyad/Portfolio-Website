@@ -264,11 +264,11 @@ nav ul li a:hover{
 /* ---------------contact------------------ */
 .contact-left{
     flex-basis: 35%;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .contact-right{
     flex-basis: 60%;
-     margin-right: 20px;
+     margin-right: 40px;
 }
 .contact-left p{
     margin-top: 30px;
