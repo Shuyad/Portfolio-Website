@@ -617,11 +617,11 @@ form .btn2{
     .btn2{
         display: inline-block;
         background: #ff004f;
-        margin-left: 80px;
+        margin-left: 30px;
         font-size: 20px;
     }
     .contact-right form{
-        width: 90%;
+        width: 120%;
         margin: auto;
     }
     form input,form textarea{
