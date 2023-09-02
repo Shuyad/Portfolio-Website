@@ -578,6 +578,7 @@ form .btn2{
     /* ---------------contact------------------ */
     .contact-left{
         flex-basis: 100%;
+        margin-left: -5px;
     }
     .contact-right{
         flex-basis: 100%;
